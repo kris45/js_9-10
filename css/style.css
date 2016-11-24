@@ -1,0 +1,176 @@
+
+.wrapper {
+    background: #F0EFE7;   
+    padding: 30px 60px;
+    font-family: Arial;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+h2 {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #5cb71b;
+    color: #fff; 
+    margin: 30px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+/* Dropdown */
+
+nav li ul {    
+    background-color: #4a9e0e;
+    position: absolute;
+    top: 40px; 
+    width: 200px;
+}
+
+nav li li {
+    position: relative;
+    display: block;
+}
+
+nav li li ul {
+    position: absolute;
+    top: 0;
+    left: 200px; 
+}
+
+nav a {
+    line-height: 40px;
+    margin: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover{
+    color: #000;
+}
+
+nav li li a {
+    border-bottom: solid 1px #ddd;
+    margin: 0 10px;
+}
+
+nav li li:last-child a {
+    border-bottom:none;
+}
+
+ul.submenu {
+    display:none;
+}
+
+.dropdown {
+  z-index: 99;
+}
+
+.arrow-down {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;  
+    border-top: 5px solid #fff;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+}
+
+.arrow-right {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #fff;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+}
+
+.width  {
+    width: 50px;
+}
+
+/* Checkbox */
+
+.checkbox {
+    background-color: #81cff9;
+    padding: 30px;
+}
+
+.check {
+    display: block;
+}
+
+.niceCheck {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(../img/checkbox.png);
+    overflow: hidden;
+    margin: 20px 20px 0;
+}
+
+.niceCheck input {
+    margin-left: -100px; 
+} 
+
+.niceCheckDisabled {
+    background-image: url(../img/checkbox-disabled.png);
+}
+
+.checkboxCSS {
+    background-color: #81cff9;
+    padding: 30px;
+}
+
+/* CSS Checkbox */
+
+.checkboxCSS input[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+.checkboxCSS label {
+    cursor: pointer;
+}
+
+.checkboxCSS label:after {
+    content: ' ';
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../img/checkbox.png);
+    position: relative;
+    top: 3px;
+    margin-left: 15px;
+}
+
+.checkboxCSS input[type=checkbox]:checked + label:after {
+    background-position: 0 -17px;
+}
+
+.checkboxCSS label:hover:after {
+    background-position: 0 -34px;
+}
+
+.checkboxCSS input[type=checkbox]:disabled + label:after {
+    background: url(../img/checkbox-disabled.png);
+    background-position: 0 -34px;
+}
+
+.checkboxCSS input[type=checkbox][disabled][checked] + label:after {
+    background: url(../img/checkbox-disabled.png);
+    background-position: 0 -17px;
+}
